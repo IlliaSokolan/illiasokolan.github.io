@@ -35,14 +35,6 @@
         line-height: 24px;
         top: 21%;
     }
-    .circle-item {
-        width: 15px;
-        height: 15px;
-    }
-    .wrapper {
-        grid-template-columns: repeat(auto-fit, 15px);
-        grid-template-rows: repeat(auto-fit, 15px);
-    }
 }
 
 .circle-item {
