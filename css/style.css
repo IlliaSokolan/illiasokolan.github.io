@@ -1,16 +1,15 @@
-:root {
+* {
     padding: 0;
     margin: 0;
 }
-.title {
-    text-align: center;
-}
-.screen {
+
+
+.wrapper {
+    
+    z-index: 1;
     width: 50%;
     height: 50vh;
     margin: 25vh auto;
-}
-.wrapper {
     max-height: 300px;
     border: 1px solid black;
     border-radius: 10px;
@@ -20,6 +19,32 @@
     grid-template-columns: repeat(auto-fit, 30px);
     grid-template-rows: repeat(auto-fit, 30px);
 }
+
+.title {
+    position: absolute;
+    font-size: 24px;
+    line-height: 36px;
+    left: 0;
+    right: 0;
+    top: 19%;
+    text-align: center;
+}
+@media (max-width: 576px) {
+    .title {
+        font-size: 14px;
+        line-height: 24px;
+        top: 21%;
+    }
+    .circle-item {
+        width: 15px;
+        height: 15px;
+    }
+    .wrapper {
+        grid-template-columns: repeat(auto-fit, 15px);
+        grid-template-rows: repeat(auto-fit, 15px);
+    }
+}
+
 .circle-item {
     width: 30px;
     height: 30px;
